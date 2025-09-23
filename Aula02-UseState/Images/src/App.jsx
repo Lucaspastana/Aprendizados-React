@@ -3,6 +3,9 @@ import './App.css'
 // 2° Imagem em assets
 import qualquercoisa from "./assets/night.jpg";
 
+//3° UseState
+import Data from "./assets/components/Data"
+
 function App() {
   
 
@@ -14,6 +17,8 @@ function App() {
      {/*2° Imagen em assets
       */}
      <img src={qualquercoisa} alt='Algo'></img>
+
+     <Data/>
         
     </>
   )
