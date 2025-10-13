@@ -1,15 +1,15 @@
-import './App.css'
+import { useState } from 'react'
 import Data from './assets/components/Data'
 // 4- renderização da lista
-import ListRender1 from './assets/components/LIstRender'
+import ListRender1 from './assets/components/ListRender'
 import ConditionalRender from './assets/components/ConditionalRender'
 import Teste from './assets/components/props';
-import Desus from './assets/components/desusprops';
+import Desus from './assets/components/Desusprops';
+import './App.css'
 
 function App() {
- 
-  const nome ='João';
-  
+  const [count, setCount] = useState(0)
+
   return (
     <>
       <Data/>
