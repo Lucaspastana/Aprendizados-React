@@ -4,14 +4,21 @@ import React from "react";
 estados em componentes. Desestruturando Props em Componentes Funcionais: */
 
 //Neste exemplo, as propriedades namee agesão desestruturadas diretamente dos parâmetros da função, 
-// ornando-as acessíveis dentro do corpo do componente.
+// Tornando-as acessíveis dentro do corpo do componente.
 
-function Desus({name,age}){
+function Desus({marca,km,cor,id}){
     return (
         <div>
-            <h1>desestruturação de props {name},{age}</h1>
+            <ul className="Carro">
+                <li>ID:{id}</li>
+                <li>Marca:{marca}</li>
+                <li>Kilometragem:{km}</li>
+                <li>pintura:{cor}</li>
+            </ul>
         </div>
     )
 }
 
 export default Desus;
+
+//Desestruturação de props permite acessar e manipular mais facil as propriedades entre os componentes.
