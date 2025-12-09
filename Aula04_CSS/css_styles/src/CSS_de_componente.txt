@@ -1,0 +1,5 @@
+° O CSS de componente é utilizado apenas em um componente especifico;
+
+° Geralmente o arquivo é criado com o mesmo nome do componente;
+
+° Lembre-se: ele não é scoped ou seja pode vazar para outros elementos do projeto;

@@ -1,0 +1,3 @@
+° O CSS global é utilizado para aplicar estilos a todos elementos do projeto.
+
+° Utilizamos o arquivo index.css para isso, ele está na pasta src;

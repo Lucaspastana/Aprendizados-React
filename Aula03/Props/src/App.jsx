@@ -6,7 +6,14 @@ import ListRender1 from './assets/components/ListRender'
 import ConditionalRender from './assets/components/ConditionalRender'
 import Teste from './assets/components/props';
 import Desus from './assets/components/Desusprops';
+import Container from './assets/components/container';
 import './App.css'
+import ExecuteFunction from './assets/components/FunctionProps';
+import Message from './assets/components/statelift';
+
+import ChangeMessage from './assets/components/ChangeMessage';
+
+
 
 
 const cars = [
@@ -19,8 +26,23 @@ const cars = [
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+
   const nome = "Pedro";
+
+  {/*Função prop */}
+   function showMessage() {
+        console.log("Evento do componente pai")
+        
+      }
+
+    const [message,setmessage]= useState("");
+
+    const handleMessage=(msg)=>{
+      setmessage(msg);
+    };
+
 
   return (
     <>
@@ -50,6 +72,25 @@ function App() {
           km={car.km}
         />
       ))}
+
+      {/*Utilizando o children */}
+
+      <Container>
+        <div>
+          <h2>Olá esse é o children</h2>
+          <p>Aprendi em 5 min </p>
+        </div>
+      </Container>
+
+     {/*Função criada no App la em cima ^  */}
+      <ExecuteFunction myFunction={showMessage}/>
+
+      {/*state lift  */}
+      <Message msg={message}/>
+
+      <ChangeMessage handleMessage={handleMessage}/>
+
+     
       
     </>
   )
