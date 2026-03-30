@@ -1,3 +1,8 @@
 ° O CSS global é utilizado para aplicar estilos a todos elementos do projeto.
 
 ° Utilizamos o arquivo index.css para isso, ele está na pasta src;
+
+° a propriedade grid-template-columns : funciona para divisão de colunas
+ex: 
+
+grid-template-columns: auto auto 25px // terá 3 colunas 2 como auto e 1 com 25px

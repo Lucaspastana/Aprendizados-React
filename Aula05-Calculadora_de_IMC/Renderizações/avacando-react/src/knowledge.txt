@@ -1,0 +1,21 @@
+.replace() - Ele é utilizado para substituir uma parte específica de uma string por outra.
+
+Ex:
+const texto = "Eu amo JavaScript";
+const novoTexto = texto.replace("JavaScript", "React");
+// Resultado: "Eu amo React"
+
+
+Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string. 
+Em JavaScript, expressões regulares também são objetos. 
+Elas podem ser utilizadas com os métodos exec e test do objeto RegExp, e com os métodos match, 
+replace,search, e split do objeto String. Este capítulo descreve o uso de expressões regulares em 
+JavaScript.
+
+ex: 
+text.replace(/[^0-9,]/g,"");
+
+o método MAP(), do objeto Array, que nos permite percorrer um vetor e obter um novo array cujos itens são
+o resultado de uma função de callback que recebe como parâmetro cada item original. Por exemplo, podemos partir 
+de um array de valores numéricos e obter um novo contendo o quadrado de cada item original.
+
